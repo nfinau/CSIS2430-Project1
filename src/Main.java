@@ -24,6 +24,7 @@ public class Main {
         printSet("B", B);
 
         // We'll implement these one-by-one:
+        printSet("A ∪ B", union(A, B));
         // printSet("A ∩ B", intersection(A, B));
         // printSet("A - B", difference(A, B));
         // printSet("NOT(A)", complement(A));
