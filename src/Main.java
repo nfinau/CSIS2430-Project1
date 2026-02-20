@@ -27,7 +27,7 @@ public class Main {
         printSet("A ∪ B", union(A, B));
         printSet("A ∩ B", intersection(A, B));
         printSet("A - B", difference(A, B));
-        // printSet("NOT(A)", complement(A));
+        printSet("NOT(A)", complement(A));
         // printSet("A ⊕ B", symmetricDifference(A, B));
 
         System.out.println("\n=== PART 2: Multisets (Bags) ===");
@@ -128,6 +128,15 @@ public class Main {
     return result;
 }
     // static boolean[] complement(boolean[] A) { ... }
+    static boolean[] complement(boolean[] A) {
+    boolean[] result = new boolean[A.length];
+
+    for (int i = 0; i < A.length; i++) {
+        result[i] = !A[i];
+    }
+
+    return result;
+}
     // static boolean[] symmetricDifference(boolean[] A, boolean[] B) { ... }
 
     // ---------- Part 2 Operations (later) ----------
