@@ -101,6 +101,21 @@ public class Main {
     }
 
     // ---------- Part 1 Operations ----------
+
+    /**
+ * Union of two sets (A ∪ B)
+ *
+ * Computes the union of two ordinary sets represented as boolean arrays.
+ * Each index corresponds to an element in the universal set.
+ * An element is included in the result if it appears in either A or B.
+ *
+ * Logical rule:
+ * result[i] = A[i] OR B[i]
+ *
+ * @param A first set
+ * @param B second set
+ * @return a new boolean array representing A ∪ B
+ */
     // static boolean[] union(boolean[] A, boolean[] B) { ... }
     static boolean[] union(boolean[] A, boolean[] B) {
     boolean[] result = new boolean[A.length];
@@ -109,6 +124,20 @@ public class Main {
     }
     return result;
 }
+    /**
+ * Intersection (A ∩ B)
+ *
+ * Computes the intersection of two ordinary sets represented as boolean arrays.
+ * Each index corresponds to an element in the universal set.
+ * An element is included in the result only if it appears in both A and B.
+ *
+ * Logical rule:
+ * result[i] = A[i] AND B[i]
+ *
+ * @param A first set
+ * @param B second set
+ * @return a new boolean array representing A ∩ B
+ */
     // static boolean[] intersection(boolean[] A, boolean[] B) { ... } 
     static boolean[] intersection(boolean[] A, boolean[] B) { // Intersection: element must exist in both sets
     boolean[] result = new boolean[A.length];
@@ -117,6 +146,20 @@ public class Main {
     }
     return result;
 }
+    /**
+ * Set Difference (A − B)
+ *
+ * Computes the difference of two ordinary sets represented as boolean arrays.
+ * Each index corresponds to an element in the universal set.
+ * An element is included in the result if it exists in A but not in B.
+ *
+ * Logical rule:
+ * result[i] = A[i] AND NOT B[i]
+ *
+ * @param A first set
+ * @param B second set
+ * @return a new boolean array representing A − B
+ */
     // static boolean[] difference(boolean[] A, boolean[] B) { ... }
     static boolean[] difference(boolean[] A, boolean[] B) {
     boolean[] result = new boolean[A.length];
@@ -127,6 +170,19 @@ public class Main {
 
     return result;
 }
+    /**
+ * Complement (NOT A)
+ *
+ * Computes the complement of a set represented as a boolean array.
+ * Each index corresponds to an element in the universal set.
+ * The complement contains all elements not present in A.
+ *
+ * Logical rule:
+ * result[i] = NOT A[i]
+ *
+ * @param A input set
+ * @return a new boolean array representing the complement of A
+ */
     // static boolean[] complement(boolean[] A) { ... }
     static boolean[] complement(boolean[] A) {
     boolean[] result = new boolean[A.length];
@@ -137,6 +193,21 @@ public class Main {
 
     return result;
 }
+    /**
+ * Symmetric Difference (A ⊕ B)
+ *
+ * Computes the symmetric difference of two ordinary sets represented as boolean arrays.
+ * Each index corresponds to an element in the universal set.
+ * An element is included if it appears in exactly one of the two sets.
+ *
+ * Logical rule:
+ * result[i] = A[i] XOR B[i]
+ *
+ * @param A first set
+ * @param B second set
+ * @return a new boolean array representing A ⊕ B
+ */
+    
     // static boolean[] symmetricDifference(boolean[] A, boolean[] B) { ... }
     static boolean[] symmetricDifference(boolean[] A, boolean[] B) {
     boolean[] result = new boolean[A.length];
@@ -148,7 +219,7 @@ public class Main {
     return result;
 }
 
-    // ---------- Part 2 Operations (later) ----------
+    // ---------- Part 2 Operations ----------
     // static int[] multisetUnion(int[] A, int[] B) { ... }
     // static int[] multisetIntersection(int[] A, int[] B) { ... }
     // static int[] multisetDifference(int[] A, int[] B) { ... }
