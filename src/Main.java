@@ -47,7 +47,7 @@ public class Main {
 
     // ---------- Printing Helpers ----------
     static void printSet(String label, boolean[] set) {
-        System.out.println("\n" + label + ":");
+        System.out.println("\n--- " + label + " ---");
         System.out.println("Bit string: " + toBitString(set));
         System.out.println("Elements: " + toElementList(set));
     }
