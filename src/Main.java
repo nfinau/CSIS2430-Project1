@@ -3,7 +3,7 @@
  * Part 1: Ordinary sets using boolean arrays
  * Part 2: Multisets (bags) using integer counts
  *
- * Team: TBD
+ * Team Name: TBD
  * Members: Naomi, Alejandro, Bryant, Han
  */
 public class Main {
@@ -40,7 +40,7 @@ public class Main {
 
         // Part 2:
         printBag("A ⊎ B (Union=max)", multisetUnion(bagA, bagB));
-        // printBag("A ⊓ B (Intersection=min)", multisetIntersection(bagA, bagB));
+        printBag("A ⊓ B (Intersection=min)", multisetIntersection(bagA, bagB));
         // printBag("A - B (Difference)", multisetDifference(bagA, bagB));
         // printBag("A + B (Sum)", multisetSum(bagA, bagB));
     }
@@ -231,6 +231,15 @@ public class Main {
     return result;
 }
     // static int[] multisetIntersection(int[] A, int[] B) { ... }
+    static int[] multisetIntersection(int[] A, int[] B) {
+    int[] result = new int[A.length];
+
+    for (int i = 0; i < A.length; i++) {
+        result[i] = Math.min(A[i], B[i]);
+    }
+
+    return result;
+}
     // static int[] multisetDifference(int[] A, int[] B) { ... }
     // static int[] multisetSum(int[] A, int[] B) { ... }
 }
