@@ -2,7 +2,7 @@
 
 ## Team + Roles
 - Naomi (Implementation Lead) — core implementation, integration, main branch health
-- TBD (Verification Lead) — test plan, edge cases, verification evidence
+- Bryant (Verification Lead) — test plan, edge cases, verification evidence
 - TBD (Communications Lead) — report assembly, run instructions, deliverable packaging
 - TBD (Flex) — support role based on team response
 
