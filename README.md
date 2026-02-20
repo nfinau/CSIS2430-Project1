@@ -56,4 +56,4 @@ Exact output values depend on the sample data defined inside `Main.java`.
   proj_1_plan.md  
   proj_1_scope.md  
   proj_1_pseudocode.md  
-  test_results.md (verification evidence)
+  test-results.md (verification evidence)
