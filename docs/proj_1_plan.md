@@ -23,8 +23,8 @@
 | 4 | Draft Pseudocode | Naomi | Done | proj_1_pseudocode.md outlines core algorithm/control flow | commit: 8e52609 |
 | 5 | Create project skeleton in /src | Naomi | Done | Code compiles/runs with placeholder flow | commit: f3ff968 |
 | 6 | Define test cases + edge cases | TBD (Verification) | Not Started | At least 8 tests listed, incl. 3 edge cases | (future) |
-| 7 | Implement core feature A | Naomi | Not Started | Feature works on at least 3 sample inputs | (future) |
-| 8 | Implement core feature B | Naomi | Not Started | Feature works + integrated | (future) |
+| 7 | Implement core feature A | Naomi | Not Started | Feature works on at least 3 sample inputs | commit: b743616 |
+| 8 | Implement core feature B | Naomi | Not Started | Feature works + integrated | commit: 11977fa |
 | 9 | Add automated/manual verification evidence | TBD (Verification) | Not Started | Test results documented in /docs/test-results.md | (future) |
 | 10 | Run instructions + packaging | TBD (Comms) | Not Started | README has run steps; deliverables zipped | (future) |
 
